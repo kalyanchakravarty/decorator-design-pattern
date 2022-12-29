@@ -4,13 +4,12 @@ public class Tomato extends PizzaDecorator{
     Tomato(Pizza pizza)
     {
         this.pizza = pizza;
-        this.cost = 30;
         this.description = "Tomato";
     }
 
     @Override
     public int getCost() {
-        return this.cost + pizza.getCost();
+        return 30 + pizza.getCost();
     }
 
     @Override

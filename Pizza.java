@@ -1,7 +1,9 @@
 abstract class Pizza {
-    public int cost;
-    public String description;
+    public String description = "unknown";
 
-    abstract String getDescription();
+    public String getDescription() {
+        return this.description;
+    }
+
     abstract int getCost();
 }
